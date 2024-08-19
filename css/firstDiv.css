@@ -21,11 +21,12 @@
     background-image: url(/images/bg-header-desktop.png);
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 120vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2em;
+    padding: 5.5em 0 2em 0;
 }
 
 

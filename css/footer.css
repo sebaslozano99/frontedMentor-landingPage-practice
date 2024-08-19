@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+:root {
+    --primary-cyan-color: hsl(171, 66%, 44%);
+    --primary-light-blue: hsl(233, 100%, 69%);
+    --neutral-dark-grayish-blue:  hsl(210, 10%, 33%);
+    --neutral-grayish-blue: hsl(201, 11%, 66%);
+}
+
+footer {
+    height: 25vh;
+    /* border: 5px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 3em;
+    background-color: #f5f6f8;
+}
+
+/* footer div:first-child {
+    border: 1px solid red;
+} */
+
+footer div:first-child img {
+    width: 40%;
+}
+
+
+
+footer div:nth-child(2){
+    /* border: 3px dotted blue; */
+    width: 60%;
+    display: flex;
+    gap: 7em;
+    display: flex;
+    justify-content: start;
+    gap: 1em;
+}
+
+footer div:nth-child(2) ul {
+    list-style: none;
+}
+
+footer div:nth-child(2) ul li {
+    /* border: 1px solid red; */
+    margin: 5px 0;
+}
+
+
+footer div:nth-child(2) ul li a {
+    text-decoration: none;
+    color: var(--neutral-grayish-blue);
+    font-weight: 600;
+    line-height: 1.5;
+    /* border: 1px dotted green; */
+    display: block;
+    padding: 7px 10px;
+}
+
+
+
+
+footer div:nth-child(3) {
+    /* border: 2px solid orange; */
+    display: flex;
+    gap: 1.4em;
+    align-items: center;
+}
+
+
+footer div:nth-child(3) a {
+    transition: transform ease-in-out .3s;
+}
+
+
+footer div:nth-child(3) a:hover {
+    transform: translateY(-5px);
+
+}
