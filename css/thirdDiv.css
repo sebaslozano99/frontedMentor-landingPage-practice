@@ -60,4 +60,5 @@
 .thirdDiv div:nth-child(2) img {
     /* border: 2px dashed green; */
     width: 60%;
+    max-width: 100%;
 }

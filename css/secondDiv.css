@@ -20,7 +20,13 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+}
+
+.secondDiv .emptyBox {
+    /* border: 3px solid green; */
+    max-height: 100%;
+    width: 50%;
 }
 
 .secondDiv .imageComputerContainer {
@@ -28,10 +34,11 @@
     position: absolute;
     left: -60px;
     width: 50%;
+    
 }
 
 .secondDiv .imageComputerContainer img {
-    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -43,7 +50,7 @@
     flex-direction: column;
     justify-content: space-around;
     width: 22em;
-    margin-right: 18em;
+     
 }
 
 

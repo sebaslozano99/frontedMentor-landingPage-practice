@@ -14,7 +14,10 @@
     --neutral-grayish-blue: hsl(201, 11%, 66%);
 }
 
-
+main { 
+    /* border: 5px solid red; */
+    max-width: 1600px;
+}
 
 .firstDiv {
     /* border: 5px solid red; */
@@ -38,6 +41,7 @@
 .firstDiv div:first-child img {
     /* border: 1px solid red; */
     width: 7%;
+    max-width: 100%;
 }
 
 
