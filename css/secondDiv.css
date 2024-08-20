@@ -16,7 +16,7 @@
 .secondDiv {
     /* border: 5px solid red; */
     width: 100%;
-    height: 90vh;
+    min-height: 90vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -30,7 +30,7 @@
 }
 
 .secondDiv .imageComputerContainer {
-    /* border: 1px solid black; */
+    /* border: 3px solid black; */
     position: absolute;
     left: -60px;
     width: 50%;
@@ -39,6 +39,7 @@
 
 .secondDiv .imageComputerContainer img {
     max-width: 100%;
+    /* border: 3px dashed orange; */
 }
 
 
@@ -52,12 +53,11 @@
     width: 22em;
      
 }
+/* 
+.secondDiv .mainFunctionalitiesContainer div {
+        border: 2px dashed green;
 
-
-/* .secondDiv .mainFunctionalitiesContainer div {
-    border: 2px dashed green;
-
-} */
+}  */
 
 .secondDiv .mainFunctionalitiesContainer div h3 {
     color: var(--neutral-dark-grayish-blue) ;
@@ -69,4 +69,53 @@
     color: var(--neutral-grayish-blue) ;
     line-height: 1.5;
     font-size: 16px;
+}
+
+
+
+@media (max-width: 900px) {
+    .secondDiv .imageComputerContainer {
+        width: 60%;
+    }
+
+    .secondDiv .mainFunctionalitiesContainer {
+        width: 17em;
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    .secondDiv {
+        flex-direction: column;
+        padding-top: 2em;
+        gap: 3em;
+    }
+
+    .secondDiv .emptyBox {
+        display: none;
+    }
+
+    .secondDiv .imageComputerContainer {
+        position: static;
+    }
+
+    .secondDiv .imageComputerContainer {
+        width: 70%;
+    }
+
+    .secondDiv .mainFunctionalitiesContainer {
+        min-width: 80%;
+        gap: 2em;
+    }
+
+    .secondDiv .mainFunctionalitiesContainer div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondDiv .mainFunctionalitiesContainer div p{
+        text-align: center;
+    }
 }
