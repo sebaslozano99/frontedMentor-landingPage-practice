@@ -16,10 +16,12 @@
 .fifthDiv {
     /* border: 3px solid orange; */
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 1em;
+    gap: 2em;
 }
 
 
@@ -50,7 +52,7 @@
 
 .fifthDiv div:nth-child(2){
     /* border: 2px dotted blue; */
-    padding: 2em;
+    padding: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,4 +75,11 @@
 .fifthDiv div:nth-child(2) button:nth-child(2) {
     background-color: var(--primary-light-blue);
     color: #fff;
+}
+
+
+@media (max-width: 500px) {
+    .fifthDiv div:nth-child(2) {
+        flex-direction: column;
+    }
 }

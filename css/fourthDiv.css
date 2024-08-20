@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 1em;
 }
 
 .fourthDiv h3, h4 {
@@ -72,9 +73,14 @@
     max-width: 100%;
 }
 
+/* .fourthDiv .second div h4 {
+    border: 2px dotted orange;
+} */
+
 .fourthDiv .second div p {
     text-align: center;
     line-height: 1.5;
+    /* border: 1px solid green; */
 }
 
 
@@ -104,7 +110,7 @@
 
 @media (max-width: 750px) {
     .fourthDiv {
-        padding: 2em 0;
+        padding: 2em 1em;
         row-gap: 5em;
     }
 
@@ -117,5 +123,16 @@
     .fourthDiv .companys-logos {
         flex-direction: column;
         row-gap: 5em;
+    }
+
+    
+    .fourthDiv .second div {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .fourthDiv .second div {
+        width: 80%;
     }
 }

@@ -29,7 +29,7 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 2em;
-    padding: 5.5em 0 2em 0;
+    padding: 5.5em 1em 2em 1em;
 }
 
 
@@ -156,7 +156,7 @@ main {
 }
 
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
     .firstDiv div:first-child img {
         width: 40%;
     }
